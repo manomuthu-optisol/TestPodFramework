@@ -26,11 +26,15 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'manomuthu-optisol' => 'muthukumar.m@optisolbusiness.com' }
   s.source           = { :git => 'https://github.com/manomuthu-optisol/TestPodFramework.git', :tag => s.version.to_s }
+
+ #  s.source           = { :git => 'https://github.com/manomuthu-optisol/UmbrellaFW.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'TestPodFramework/Classes/**/*'
+  
+  s.ios.vendored_frameworks = 'UmbrellaFramework.framework'
   
   # s.resource_bundles = {
   #   'TestPodFramework' => ['TestPodFramework/Assets/*.png']
